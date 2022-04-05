@@ -40,6 +40,7 @@ jobs:
           at: /tmp/workspace
       - run : |
           TAG=0.1.$CIRCLE_PREVIOUS_BUILD_NUM
+          echo "test"
           git clone https://github.com/David-VTUK/CircleCI-Webapp-CD /tmp/CircleCI-Webapp-CD
           cd /tmp/CircleCI-Webapp-CD
           cp /tmp/workspace/deployment.yaml .
